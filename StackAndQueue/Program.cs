@@ -10,6 +10,7 @@
             Console.WriteLine("1.Push operation");
             Console.WriteLine("2. Peek and Pop till the stack is empty");
             Console.WriteLine("3. Create Queue of 56->30->70");
+            Console.WriteLine("4. Dequeue from the beginning of the queue");
             Console.WriteLine("------------------------------------------");
             Console.Write("Enter the option : ");
             int num = Convert.ToInt32(Console.ReadLine());
@@ -39,6 +40,16 @@
                     linkedListQueue.Enqueue(70);
                     linkedListQueue.Display();
                     break;
+                case 4:
+                    LinkedListQueue linkedListQueue1 = new LinkedListQueue();
+                    linkedListQueue1.Enqueue(56);
+                    linkedListQueue1.Enqueue(30);
+                    linkedListQueue1.Enqueue(70);
+                    linkedListQueue1.Dequeue();
+                    linkedListQueue1.Dequeue();
+                    linkedListQueue1.Display();
+                    break;
+
                 default:
                     Console.WriteLine("Enter a valid option");
                     break;
