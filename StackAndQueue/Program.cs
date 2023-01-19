@@ -8,6 +8,7 @@
             Console.WriteLine();
             Console.WriteLine("-------------Stack Operations-------------");
             Console.WriteLine("1.Push operation");
+            Console.WriteLine("2. Peek and Pop till the stack is empty");
             Console.WriteLine("------------------------------------------");
             Console.Write("Enter the option : ");
             int num = Convert.ToInt32(Console.ReadLine());
@@ -18,6 +19,16 @@
                     linkedListStack.Push(70);
                     linkedListStack.Push(30);
                     linkedListStack.Push(56);
+                    linkedListStack.Display();
+                    break;
+                case 2:
+                    linkedListStack.Push(70);
+                    linkedListStack.Push(30);
+                    linkedListStack.Push(56);
+                    linkedListStack.Display();                   
+                    linkedListStack.Peek();
+                    linkedListStack.Pop();
+                    linkedListStack.IsEmpty();
                     linkedListStack.Display();
                     break;
             }
